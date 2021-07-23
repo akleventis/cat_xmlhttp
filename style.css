@@ -11,7 +11,7 @@ h1 {
   margin-top: 0;
   margin-bottom: 5rem;
   background-color: #0f3147;
-  border-bottom: 1px solid #048f7c;
+  border-bottom: 2px solid #048f7c;
   padding: 15px 0 15px;
   position: fixed;
   z-index: 1;
@@ -45,7 +45,7 @@ button {
   font-size: 1em;
 }
 button:hover {
-  color: #4ef9f4;
+  color: white;
 	border-radius: 50px;
 	border-color: #58f14a;
   background-color: #000000;
@@ -117,18 +117,16 @@ footer {
   width: 100%;
   bottom: 0;
   left: 0;
+  background-color: red;
   margin: 0;
+  border: 2px solid #000000;
   background-color: #0f3147;
-  border-top: 1px solid #048f7c; 
+  border-top: 2px solid #048f7c; 
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   padding: 5px 0 5px 0;
-  /* font-size: .8em; */
 }
 footer p {
-  margin: 0;
-}
-footer > p a{
   margin: .2em;
   padding: 0 15px 0 15px;
 }
@@ -146,6 +144,3 @@ footer span {
 .links {
   margin: 2em 0 0 15px;
 } 
-a:hover {
-  color: #00cbc5;
-}
