@@ -45,7 +45,6 @@ button {
   font-size: 1em;
 }
 button:hover {
-  color: white;
 	border-radius: 50px;
 	border-color: #58f14a;
   background-color: #000000;
@@ -143,3 +142,16 @@ footer span {
 .links {
   margin: 2em 0 0 15px;
 } 
+.switch {
+  color: #ffffff;
+  text-decoration: none;
+  font-style: italic;
+  transition: 500ms;
+  border: 1px dotted transparent;
+  border-bottom: 1px dotted #58f14a;
+  padding: 5px;
+  border-radius: 5px;
+}
+.switch:hover{
+  border: 1px dotted #58f14a;
+}

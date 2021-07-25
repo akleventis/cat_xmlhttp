@@ -1,40 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="icon/cat.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet" />
+    <title>Cats</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="icon/cat.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
-  <title>Cats</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-  <h1>Welcome to the Cat Project!</h1>
-  <div class="container">
-    <div class="cat-images" id="cat-images">
-      <!-- Adding images dynamically here -->
+  <body>
+      <h1>Welcome to the Cat Project!</h1>
+    <div class="container">
+      <div class="cat-images" id="cat-images">
+        <!-- Adding images dynamically here -->
+      </div>
+      <button id="cat-button" onclick="catTime()">CAT TIME !!!</button>
+      <div class="move-buttons">
+        <button id="move-button" onclick="moveLeft()">MOVE LEFT</button>
+        <button id="clear-cats">Reset!</button>
+        <button id="move-button" onclick="moveRight()">MOVE RIGHT</button>
+      </div>
+      <button id="comeBack-button" onclick="comeBack()">COME BACK !!!</button>
+      <p>Click the top button to start!</p>
+      <a class="switch" href="index2.html">-dogs are better?-</a>
     </div>
-    <button id="cat-button" onclick="catTime()">CAT TIME !!!</button>
-    <div class="move-buttons">
-      <button id="move-button" onclick="moveLeft()">MOVE LEFT</button>
-      <button id="clear-cats">Reset!</button>
-      <button id="move-button" onclick="moveRight()">MOVE RIGHT</button>
-    </div>
-    <button id="comeBack-button" onclick="comeBack()">COME BACK !!!</button>
-    <p>Click the top button to start!</p>
-  </div>
-  <footer>
-    <p><a href="https://alexleventis.com" target="_blank">© Alex Leventis</a>
-      <span><a href="https://bit.ly/3wcMRaV" class="links" target="_blank">Github</a><a href="https://bit.ly/2Tnd6fW"
-          class="links" target="_blank">Linkdin</a></span>
-    </p>
-  </footer>
-  <script src="index.js"></script>
-</body>
-
+    
+    <footer>
+      <p>
+        <a href="https://alexleventis.com" target="_blank">© Alex Leventis</a>
+        <span
+          ><a href="https://bit.ly/3wcMRaV" class="links" target="_blank">Github</a
+          ><a href="https://bit.ly/2Tnd6fW" class="links" target="_blank">Linkdin</a></span
+        >
+      </p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
 </html>

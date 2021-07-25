@@ -1,5 +1,6 @@
 xhttp = new XMLHttpRequest();
 const APIUrl = "https://api.thecatapi.com/v1/images/search";
+const APIUrl2 = "https://api.thedogapi.com/v1/images/search";
 const APIKey = ""; 
 const CAT_IMAGES_ID = "cat-images";
 const CLEAR_CAT_BUTTON_ID = "clear-cats";
@@ -19,7 +20,7 @@ let clicked = false;
 let imageToMove = null;
 let z = 1;
 
-function setCatImage() {
+function setCatImage(APIUrl) {
   xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
       var image = new Image();
@@ -49,13 +50,44 @@ function addNewImageId() {
 
 function catTime() { // called by "Cat Time!!!" button"
   if (images.length == 0) { // Executed on first click
-    setCatImage();
+    setCatImage(APIUrl);
     clicked = true;
   } else {
     imageToMove = whichImageToMove(); // Make sure current centered image is element top move
     moveImageDown(imageToMove); // Changes element class -> actually moves the image
     if (images.length == offCenterCats.length) {
-      setCatImage(); // New cat image set if only one cat in center
+      setCatImage(APIUrl); // New cat image set if only one cat in center
+    }
+  }
+}
+function dogTime() { 
+  if (images.length == 0) { 
+    setCatImage(APIUrl2);
+    clicked = true;
+  } else {
+    imageToMove = whichImageToMove(); 
+    moveImageDown(imageToMove); 
+    if (images.length == offCenterCats.length) {
+      setCatImage(APIUrl2);
+    }
+  }
+}
+function moveRight1() {
+  if (clicked == true) {
+    imageToMove = whichImageToMove();
+    moveImageRight(imageToMove);
+    if (images.length == offCenterCats.length) {
+      setCatImage(APIUrl2);
+    }
+  }
+}
+
+function moveLeft1() {
+  if (clicked == true) {
+    imageToMove = whichImageToMove();
+    moveImageLeft(imageToMove);
+    if (images.length == offCenterCats.length) {
+      setCatImage(APIUrl2);
     }
   }
 }
@@ -65,7 +97,7 @@ function moveRight() {
     imageToMove = whichImageToMove();
     moveImageRight(imageToMove);
     if (images.length == offCenterCats.length) {
-      setCatImage();
+      setCatImage(APIUrl);
     }
   }
 }
@@ -75,7 +107,7 @@ function moveLeft() {
     imageToMove = whichImageToMove();
     moveImageLeft(imageToMove);
     if (images.length == offCenterCats.length) {
-      setCatImage();
+      setCatImage(APIUrl);
     }
   }
 }
