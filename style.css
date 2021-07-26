@@ -29,6 +29,7 @@ p {
   align-items: center;
   flex-direction: column;
   padding-top: 150px;
+  padding-bottom: 80px;
 }
 .container > p {
   font-size: 1.4em;
@@ -54,6 +55,7 @@ button:hover {
   margin-top: 16rem;
 }
 
+
 #move-button{
   display: inline;
   margin-left: 1rem;
@@ -63,7 +65,9 @@ button:hover {
   margin: 1rem;
   display: inline;
 }
-
+.sbtn{
+  margin: 10px 0 7px 0;
+}
 #cat-images {
   z-index: 0;
   display: flex;
@@ -148,10 +152,12 @@ footer span {
   font-style: italic;
   transition: 500ms;
   border: 1px dotted transparent;
-  border-bottom: 1px dotted #58f14a;
-  padding: 5px;
+  border-bottom: 1px dotted #1e9f12;
+  padding: 20;
   border-radius: 5px;
+  height: 20px;
+  font-size: .9em;
 }
 .switch:hover{
-  border: 1px dotted #58f14a;
+  background-color: #143f5b97;
 }

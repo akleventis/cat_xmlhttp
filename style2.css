@@ -29,6 +29,7 @@ body {
     align-items: center;
     flex-direction: column;
     padding-top: 150px;
+    padding-bottom: 80px;
   }
   .container > p {
     font-size: 1.4em;
@@ -64,6 +65,9 @@ body {
   }
   .container p {
     color: #000000;
+  }
+  .sbtn{
+    margin: 10px 0 7px 0;
   }
   #cat-images {
     z-index: 0;
@@ -152,7 +156,8 @@ body {
    border-bottom: 1px dotted #9e2a2b;
    padding: 5px;
    border-radius: 5px;
+   font-size: .9em;
  }
  .switch:hover{
-   border: 1px dotted #9e2a2b;
+  background-color: #f1e28d73;
  }
